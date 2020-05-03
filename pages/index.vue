@@ -30,6 +30,21 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  beforeCreate() {
+    console.log('beforeC')
+  },
+  created() {
+    console.log('created')
+  },
+  beforeMount() {
+    console.log('beforeM')
+  },
+  mounted() {
+    console.log('mounte d')
+  },
+  beforeDestroy() {
+    console.log('berfore destroy')
   }
 }
 </script>
